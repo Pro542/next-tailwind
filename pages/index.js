@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import ListItem from '../components/listItem';
 
 export default function Home() {
   return (
@@ -7,12 +8,11 @@ export default function Home() {
         <title>Next Tailwind</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className="p-4 shadow rounded bg-white">
-        <h1 className="text-black-500 text-4xl">Nextjs</h1>
-        <span className="text-green-500">tailwindcss</span>
-	&nbsp;
-        <span className="text-blue-500">typescript (coming soon)</span>
+      <div>
+        <ListItem title="Nextjs" items={["tailwind", "typescript (coming soon)", "styled-components (coming soon)"]} />
+        <ListItem title="Nextjs" items={["tailwind", "typescript (coming soon)", "styled-components (coming soon)"]} />
       </div>
     </div>
  );
+
 }
